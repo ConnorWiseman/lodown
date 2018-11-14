@@ -1,0 +1,43 @@
+{
+  "name": "lodown",
+  "version": "0.0.0",
+  "description": "A templating engine powered by ES6 tagged templates.",
+  "author": "Connor Wiseman",
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*.js"
+  ],
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "npm run lint && nyc ava"
+  },
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorWiseman/lodown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConnorWiseman/lodown/issues"
+  },
+  "homepage": "https://github.com/ConnorWiseman/lodown#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^1.0.0-rc.1",
+    "eslint": "^5.9.0",
+    "nyc": "^13.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "ava": {
+    "files": [
+      "test/**/*.spec.js"
+    ]
+  }
+}
