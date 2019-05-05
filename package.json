@@ -1,6 +1,6 @@
 {
   "name": "lodown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A templating engine powered by ES6 tagged templates.",
   "author": "Connor Wiseman",
   "license": "MIT",
